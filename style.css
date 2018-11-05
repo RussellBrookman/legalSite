@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Rosario:400,500,700');
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Rosario', sans-serif;
+}
+
+.navbar {
+	padding: .8rem;
+}
+.navbar-nav li{
+	padding-right: 20px;
+}
+.nav-link {
+	font-size: 1.1em !important;
+}
+.carousel-inner img {
+	height: 100%;
+	width: 100%;	
+}
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-caption h1 {
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 5px black;
+}
+.carousel-caption h3 {
+	font-size: 200%;
+	font-weight: 500;
+	text-shadow: 5px 5px 5px black;
+}
+.btn-primary {
+	background-color: green;
+	border: 3px solid orange;
+}
+.btn-primary:hover {
+	background-color: purple;
+	border: 3px solid red;
+}
+.jumbotron {
+	padding: 1rem;
+	border-radius: 0;
+}
+.padding {
+	padding-bottom: 2rem;
+}
+.welcome {
+	width: 75%;
+	margin: 0;
+	padding-top: 2rem;
+}
+hr {
+	border-top: 2px solid gray;
+	width: 95%;
+	margin-top: .3rem;
+	margin-bottom: 1rem;
+}
+footer {
+	background-color: gray;
+	color: white;
+	padding-top: 2rems;
+}
+hr.light {
+	border-top: 1px solid white;
+	width: 75%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
